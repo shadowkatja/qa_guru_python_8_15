@@ -6,10 +6,10 @@ login_page = LoginPage()
 product_page = ProductPage()
 user = users_data.standard_user
 
-def test_login_standard_user():
+def test_cart_flow():
     login_page.open_page()
     login_page.submit_login_page(user)
-    login_page.login_result_standard_user()
-
-
-
+    product_page.add_to_cart()
+    product_page.add_to_cart_check()
+    product_page.remove_from_cart()
+    product_page.remove_from_cart_check()
