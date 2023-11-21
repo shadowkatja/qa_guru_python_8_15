@@ -1,3 +1,6 @@
+import allure
+from allure_commons.types import Severity
+
 from data import users_data, product_data
 from pages.login_page import LoginPage
 from pages.product_page import ProductPage
@@ -8,38 +11,85 @@ product_page = ProductPage()
 user = users_data.standard_user
 
 
+@allure.tag("web")
+@allure.severity(Severity.NORMAL)
+@allure.label("owner", "e.goldinova")
+@allure.description("Test with allure steps")
+@allure.feature("Product description")
+@allure.link('https://www.saucedemo.com', name='Testing')
 def test_check_item_backpack():
-    login_page.open_page()
-    login_page.submit_login_page(user)
+    with allure.step("Login"):
+        login_page.login(user)
     product = product_data.backpack
-    product_page.check_item(product)
+    with allure.step(f"Check_item_{product}"):
+        product_page.check_item(product)
 
-def test_ckeck_item_light():
-    login_page.open_page()
-    login_page.submit_login_page(user)
+
+@allure.tag("web")
+@allure.severity(Severity.NORMAL)
+@allure.label("owner", "e.goldinova")
+@allure.description("Test with allure steps")
+@allure.feature("Product description")
+@allure.link('https://www.saucedemo.com', name='Testing')
+def test_check_item_light():
+    with allure.step("Login"):
+        login_page.login(user)
     product = product_data.light
-    product_page.check_item(product)
+    with allure.step(f"Check_item_{product}"):
+        product_page.check_item(product)
 
+
+@allure.tag("web")
+@allure.severity(Severity.NORMAL)
+@allure.label("owner", "e.goldinova")
+@allure.description("Test with allure steps")
+@allure.feature("Product description")
+@allure.link('https://www.saucedemo.com', name='Testing')
 def test_ckeck_item_t_shirt_1():
-    login_page.open_page()
-    login_page.submit_login_page(user)
+    with allure.step("Login"):
+        login_page.login(user)
     product = product_data.t_shirt_black
-    product_page.check_item(product)
+    with allure.step(f"Check_item_{product}"):
+        product_page.check_item(product)
 
+
+@allure.tag("web")
+@allure.severity(Severity.NORMAL)
+@allure.label("owner", "e.goldinova")
+@allure.description("Test with allure steps")
+@allure.feature("Product description")
+@allure.link('https://www.saucedemo.com', name='Testing')
 def test_check_jacket():
-    login_page.open_page()
-    login_page.submit_login_page(user)
+    with allure.step("Login"):
+        login_page.login(user)
     product = product_data.jacket
-    product_page.check_item(product)
+    with allure.step(f"Check_item_{product}"):
+        product_page.check_item(product)
 
+
+@allure.tag("web")
+@allure.severity(Severity.NORMAL)
+@allure.label("owner", "e.goldinova")
+@allure.description("Test with allure steps")
+@allure.feature("Product description")
+@allure.link('https://www.saucedemo.com', name='Testing')
 def test_check_onesie():
-    login_page.open_page()
-    login_page.submit_login_page(user)
+    with allure.step("Login"):
+        login_page.login(user)
     product = product_data.onesie
-    product_page.check_item(product)
+    with allure.step(f"Check_item_{product}"):
+        product_page.check_item(product)
 
+
+@allure.tag("web")
+@allure.severity(Severity.NORMAL)
+@allure.label("owner", "e.goldinova")
+@allure.description("Test with allure steps")
+@allure.feature("Product description")
+@allure.link('https://www.saucedemo.com', name='Testing')
 def test_check_t_shirt_2():
-    login_page.open_page()
-    login_page.submit_login_page(user)
+    with allure.step("Login"):
+        login_page.login(user)
     product = product_data.t_shirt_red
-    product_page.check_item(product)
+    with allure.step(f"Check_item_{product}"):
+        product_page.check_item(product)
