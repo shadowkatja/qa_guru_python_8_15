@@ -18,8 +18,6 @@ user = users_data.standard_user
 @allure.feature("Cart flow")
 @allure.link('https://www.saucedemo.com', name='Testing')
 def test_cart_flow():
-    with allure.step("Login"):
-        login_page.login(user)
     with allure.step("Add item to cart from catalog"):
         product_page.add_to_cart()
     with allure.step("Check the result of adding"):

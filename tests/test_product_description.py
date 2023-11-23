@@ -16,7 +16,7 @@ product_page = ProductPage()
 @allure.link('https://www.saucedemo.com', name='Testing')
 def test_check_item_backpack():
     product = product_data.backpack
-    with allure.step(f"Check_item_{product}"):
+    with allure.step(f"Check item {product.name}"):
         product_page.check_item(product)
 
 
@@ -28,7 +28,7 @@ def test_check_item_backpack():
 @allure.link('https://www.saucedemo.com', name='Testing')
 def test_check_item_light():
     product = product_data.light
-    with allure.step(f"Check_item_{product}"):
+    with allure.step(f"Check item {product.name}"):
         product_page.check_item(product)
 
 
@@ -40,7 +40,7 @@ def test_check_item_light():
 @allure.link('https://www.saucedemo.com', name='Testing')
 def test_check_item_t_shirt_1():
     product = product_data.t_shirt_black
-    with allure.step(f"Check_item_{product}"):
+    with allure.step(f"Check item {product.name}"):
         product_page.check_item(product)
 
 
@@ -52,7 +52,7 @@ def test_check_item_t_shirt_1():
 @allure.link('https://www.saucedemo.com', name='Testing')
 def test_check_jacket():
     product = product_data.jacket
-    with allure.step(f"Check_item_{product}"):
+    with allure.step(f"Check item {product.name}"):
         product_page.check_item(product)
 
 
@@ -64,7 +64,7 @@ def test_check_jacket():
 @allure.link('https://www.saucedemo.com', name='Testing')
 def test_check_onesie():
     product = product_data.onesie
-    with allure.step(f"Check_item_{product}"):
+    with allure.step(f"Check item {product.name}"):
         product_page.check_item(product)
 
 
@@ -76,5 +76,5 @@ def test_check_onesie():
 @allure.link('https://www.saucedemo.com', name='Testing')
 def test_check_t_shirt_2():
     product = product_data.t_shirt_red
-    with allure.step(f"Check_item_{product}"):
+    with allure.step(f"Check item {product.name}"):
         product_page.check_item(product)
