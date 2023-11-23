@@ -56,7 +56,7 @@ def set_browser(request):
     browser.config.driver = driver
 
     browser.config.base_url = 'https://www.saucedemo.com'
-    browser.config.timeout = 20
+    browser.config.timeout = 2
     browser.config.window_width = 1280
     browser.config.window_height = 1024
 
