@@ -13,7 +13,8 @@ user = users_data.standard_user
 @allure.tag("web")
 @allure.severity(Severity.NORMAL)
 @allure.label("owner", "e.goldinova")
-@allure.description("Test with allure steps")
+@allure.title("Login with standard user")
+@allure.description("Flow for login with standard user")
 @allure.feature("Login flow")
 @allure.link('https://www.saucedemo.com', name='Testing')
 def test_login_standard_user():
@@ -21,6 +22,4 @@ def test_login_standard_user():
         login_page.login(user)
     with allure.step("Check the result of login"):
         login_page.login_result_standard_user()
-
-
 

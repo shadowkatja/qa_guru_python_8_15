@@ -13,7 +13,8 @@ user = users_data.standard_user
 @allure.tag("web")
 @allure.severity(Severity.NORMAL)
 @allure.label("owner", "e.goldinova")
-@allure.description("Test with allure steps")
+@allure.title("Add/remove items to/from cart")
+@allure.description("Flow for adding and removing items to/from cart on catalog page")
 @allure.feature("Cart flow")
 @allure.link('https://www.saucedemo.com', name='Testing')
 def test_cart_flow():
