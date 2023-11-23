@@ -38,7 +38,7 @@ def test_check_item_light():
 @allure.title("Check description of \"Black T-shirt\" item")
 @allure.feature("Product description")
 @allure.link('https://www.saucedemo.com', name='Testing')
-def test_check_item_t_shirt_1():
+def test_check_item_black_t_shirt():
     product = product_data.t_shirt_black
     with allure.step(f"Check item {product.name}"):
         product_page.check_item(product)
@@ -74,7 +74,7 @@ def test_check_onesie():
 @allure.title("Check description of \"Red T-shirt\" item")
 @allure.feature("Product description")
 @allure.link('https://www.saucedemo.com', name='Testing')
-def test_check_t_shirt_2():
+def test_check_red_t_shirt():
     product = product_data.t_shirt_red
     with allure.step(f"Check item {product.name}"):
         product_page.check_item(product)
