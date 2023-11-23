@@ -1,15 +1,20 @@
-import pytest
 import os
-from selene.support.shared import browser
-from dotenv import load_dotenv
 
+import pytest
+from dotenv import load_dotenv
 from selene import browser
+from selene.support.shared import browser
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 
+from data import users_data
+from pages.login_page import LoginPage
 from utils import attach
 
 DEFAULT_BROWSER_VERSION = "100.0"
+
+login_page = LoginPage()
+user = users_data.standard_user
 
 
 def pytest_addoption(parser):
@@ -18,11 +23,13 @@ def pytest_addoption(parser):
         default='100.0'
     )
 
+
 @pytest.fixture(scope='session', autouse=True)
 def load_env():
     load_dotenv()
 
-@pytest.fixture(scope='function', autouse=True)
+
+@pytest.fixture(scope='session', autouse=True)
 def set_browser(request):
     browser_version = request.config.getoption('--browser_version')
     browser_version = browser_version if browser_version != "" else DEFAULT_BROWSER_VERSION
@@ -61,3 +68,17 @@ def set_browser(request):
     attach.add_video(browser)
 
     browser.quit()
+
+
+@pytest.fixture(scope='function', autouse=True)
+def open_browser(set_browser):
+    browser.open('/')
+
+    yield
+
+    browser.open('/')
+
+
+@pytest.fixture(scope='function', autouse=True)
+def login_standard_user(open_browser):
+    login_page.login(user)
