@@ -16,7 +16,7 @@ user = users_data.standard_user
 @allure.title("Add/remove items to/from cart")
 @allure.description("Flow for adding and removing items to/from cart on catalog page")
 @allure.feature("Cart flow")
-@allure.link('https://www.saucedemo.com', name='Testing')
+@allure.link('https://www.saucedemo.com', name='Swag Labs')
 def test_cart_flow():
     with allure.step("Add item to cart from catalog"):
         product_page.add_to_cart()

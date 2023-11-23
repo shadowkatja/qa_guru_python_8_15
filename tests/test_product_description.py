@@ -13,7 +13,7 @@ product_page = ProductPage()
 @allure.label("owner", "e.goldinova")
 @allure.title("Check description of \"Backpack\" item")
 @allure.feature("Product description")
-@allure.link('https://www.saucedemo.com', name='Testing')
+@allure.link('https://www.saucedemo.com', name='Swag Labs')
 def test_check_item_backpack():
     product = product_data.backpack
     with allure.step(f"Check item {product.name}"):
@@ -25,7 +25,7 @@ def test_check_item_backpack():
 @allure.label("owner", "e.goldinova")
 @allure.title("Check description of \"Light\" item")
 @allure.feature("Product description")
-@allure.link('https://www.saucedemo.com', name='Testing')
+@allure.link('https://www.saucedemo.com', name='Swag Labs')
 def test_check_item_light():
     product = product_data.light
     with allure.step(f"Check item {product.name}"):
@@ -37,7 +37,7 @@ def test_check_item_light():
 @allure.label("owner", "e.goldinova")
 @allure.title("Check description of \"Black T-shirt\" item")
 @allure.feature("Product description")
-@allure.link('https://www.saucedemo.com', name='Testing')
+@allure.link('https://www.saucedemo.com', name='Swag Labs')
 def test_check_item_black_t_shirt():
     product = product_data.t_shirt_black
     with allure.step(f"Check item {product.name}"):
@@ -49,7 +49,7 @@ def test_check_item_black_t_shirt():
 @allure.label("owner", "e.goldinova")
 @allure.title("Check description of \"Jacket\" item")
 @allure.feature("Product description")
-@allure.link('https://www.saucedemo.com', name='Testing')
+@allure.link('https://www.saucedemo.com', name='Swag Labs')
 def test_check_jacket():
     product = product_data.jacket
     with allure.step(f"Check item {product.name}"):
@@ -61,7 +61,7 @@ def test_check_jacket():
 @allure.label("owner", "e.goldinova")
 @allure.title("Check description of \"Onesie\" item")
 @allure.feature("Product description")
-@allure.link('https://www.saucedemo.com', name='Testing')
+@allure.link('https://www.saucedemo.com', name='Swag Labs')
 def test_check_onesie():
     product = product_data.onesie
     with allure.step(f"Check item {product.name}"):
@@ -73,7 +73,7 @@ def test_check_onesie():
 @allure.label("owner", "e.goldinova")
 @allure.title("Check description of \"Red T-shirt\" item")
 @allure.feature("Product description")
-@allure.link('https://www.saucedemo.com', name='Testing')
+@allure.link('https://www.saucedemo.com', name='Swag Labs')
 def test_check_red_t_shirt():
     product = product_data.t_shirt_red
     with allure.step(f"Check item {product.name}"):
