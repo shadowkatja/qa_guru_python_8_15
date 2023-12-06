@@ -66,4 +66,14 @@
 
 ![This is an image](images/screenshots/testops_dashboard.png)
 
+### Интеграция с Telegram
+
+#### Отправка отчетов о прохождении тест-рана в телеграм
+
+![This is an image](images/screenshots/telegram.png)
+
+### Видео-отчет о прохождении тестов
+
+![autotest_gif](design/image/report.gif)
+
 
