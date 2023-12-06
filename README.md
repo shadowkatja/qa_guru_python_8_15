@@ -74,6 +74,6 @@
 
 ### Видео-отчет о прохождении тестов
 
-![autotest_gif](design/image/report.gif)
+![report_gif](images/screenshots/report.gif)
 
 
