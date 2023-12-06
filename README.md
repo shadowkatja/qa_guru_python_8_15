@@ -43,4 +43,5 @@
 4. Указать комментарий в поле COMMENT
 5. Указать версию браузера в поле BROWSER_VERSION
 6. Нажать кнопку `Build`
+
 ![This is an image](images/screenshots/build.png)
