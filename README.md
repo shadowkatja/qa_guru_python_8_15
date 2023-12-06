@@ -4,7 +4,13 @@
 
 ![This is an image](images/screenshots/main.png)
 
-<!-- Технологии -->
+#### Список проверок, реализованных в авто-тестах
+
+- [x] Логин стандартного пользователя (Вынесен в фикстуру так как без логина невозможны любые действия на сайте)
+- [x] Проверка заполнения карточек товара (7 штук)
+- [] Покупка товара
+
+### Проект реализован с использованием:
 
 <p  align="center">
   <code><img width="5%" title="Pycharm" src="https://github.com/shadowkatja/qa_guru_python_8_15/blob/master/images/icons/pycharm.png"></code>
