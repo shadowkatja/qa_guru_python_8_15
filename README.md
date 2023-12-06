@@ -1,8 +1,11 @@
 ## Проект по тестированию карточек товаров на тестовом магазине Swag Labs
+
 > <a target="_blank" href="https://www.saucedemo.com">Swag Labs</a>
 
 ![This is an image](images/screenshots/main.png)
+
 <!-- Технологии -->
+
 <p  align="center">
   <code><img width="5%" title="Pycharm" src="https://github.com/shadowkatja/qa_guru_python_8_15/blob/master/images/icons/pycharm.png"></code>
   <code><img width="5%" title="Python" src="https://github.com/shadowkatja/qa_guru_python_8_15/blob/master/images/icons/python.png"></code>
