@@ -1,4 +1,5 @@
-## Проект UI автотестов 
+## Проект по тестированию карточек товаров на тестовом магазине Swag Labs
+> <a target="_blank" href="https://www.saucedemo.com">Swag Labs</a>
 
 <!-- Технологии -->
 <p  align="center">
