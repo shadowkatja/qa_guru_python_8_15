@@ -25,3 +25,6 @@
   <code><img width="5%" title="Allure TestOps" src="https://github.com/shadowkatja/qa_guru_python_8_15/blob/master/images/icons/allure_testops.png"></code>
   <code><img width="5%" title="Telegram" src="https://github.com/shadowkatja/qa_guru_python_8_15/blob/master/images/icons/telegram.png"></code>
 </p>
+
+### Запуск автотестов выполняется на сервере Jenkins
+> <a target="_blank" href="https://jenkins.autotests.cloud/job/goldinova_qa_guru_python_8_15/">Ссылка на проект в Jenkins</a>
