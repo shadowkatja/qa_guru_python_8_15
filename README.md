@@ -4,7 +4,7 @@
 
 ![This is an image](images/screenshots/main.png)
 
-#### Список проверок, реализованных в авто-тестах
+### Список проверок, реализованных в авто-тестах
 
 - [x] Логин стандартного пользователя (Вынесен в фикстуру так как без логина невозможны любые действия на сайте)
 - [x] Проверка заполнения карточек товара (7 штук)
@@ -35,7 +35,7 @@
 * `COMMENT` - комментарий к сборке
 * `BROWSER_VERSION` - желаемая версия браузера Google Chrome, по умолчанию 100
 
-#### Для запуска автотестов в Jenkins
+### Для запуска автотестов в Jenkins
 
 1. Открыть <a target="_blank" href="https://jenkins.autotests.cloud/job/goldinova_qa_guru_python_8_15/">проект</a>
 2. Выбрать пункт `Build with Parameters`
@@ -45,3 +45,16 @@
 6. Нажать кнопку `Build`
 
 ![This is an image](images/screenshots/build.png)
+
+### Просмотр результатов в Allure results
+
+#### Просмотр общих результатов тест-рана
+
+![This is an image](images/screenshots/allure_main.png)
+
+#### Просмотр тест-кейсов с отчетом о прохождении
+
+![This is an image](images/screenshots/allure_suits.png)
+
+
+
