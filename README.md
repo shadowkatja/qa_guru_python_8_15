@@ -56,5 +56,14 @@
 
 ![This is an image](images/screenshots/allure_suits.png)
 
+### Интеграция с Allure TestOps
+
+#### Хранение всех тест-кейсов
+
+![This is an image](images/screenshots/testops_tests.png)
+
+#### Дашборд с историей тест-ранов
+
+![This is an image](images/screenshots/testops_dashboard.png)
 
 
